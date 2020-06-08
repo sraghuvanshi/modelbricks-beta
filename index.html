@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ModelBricks</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="mainNavbar">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggler" data-toggle="open-navbar1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a href="#">
+              <h4>Model<span>Bricks</span></h4>
+            </a>
+          </div>
+
+          <div class="navbar-menu" id="open-navbar1">
+            <ul class="navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="./motivation.html">Motivation</a></li>
+
+              <li><a href="./curatedList.html">Curated List</a></li>
+              <li><a href="./egfr.html">EGFR</a></li>
+
+              <li class="navbar-dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggler"
+                  data-dropdown="my-dropdown-id"
+                >
+                  Tools <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="my-dropdown-id">
+                  <li><a href="#">Actions</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">Seprated link</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">One more seprated link.</a></li>
+                </ul>
+              </li>
+              <li class="navbar-dropdown">
+                <a href="#" class="dropdown-toggler" data-dropdown="blog">
+                  Blog <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="blog">
+                  <li><a href="#">Some category</a></li>
+                  <li><a href="#">Some another category</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">Seprated link</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">One more seprated link.</a></li>
+                </ul>
+              </li>
+              <li><a href="./about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Home  -->
+    <!-- section 1 -->
+    <div class="section1">
+      <h2>Home Page</h2>
+    </div>
+
+    <script src="./js/navbar.js"></script>
+  </body>
+</html>

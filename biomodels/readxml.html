@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reading data from XML Files</title>
+  </head>
+  <style>
+    #compoundList {
+      color: green;
+    }
+    #simulationList {
+      color: crimson;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>Reading Data from Biomodel XML Files</h1>
+    </header>
+    <main>
+      <ul id="compoundList"></ul>
+      <ul id="simulationList"></ul>
+      <pre id="output"></pre>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let url = "Biomodel_172076998.xml";
+        fetch(url)
+          .then((Response) => Response.text())
+          .then((data) => {
+            let parser = new DOMParser();
+            let xml = parser.parseFromString(data, "application/xml");
+            document.getElementById("output").textContent = data;
+            console.log(xml);
+            buildCompoundList(xml);
+            buildSimulationList(xml);
+          });
+      });
+      function buildCompoundList(x) {
+        let list = document.getElementById("compoundList");
+        let compounds = x.getElementsByTagName("Compound");
+        for (let i = 0; i < compounds.length; i++) {
+          let li = document.createElement("li");
+          let compoundName = compounds[i].getAttribute("Name");
+          li.textContent = `${compoundName}`;
+          list.appendChild(li);
+        }
+      }
+      function buildSimulationList(x) {
+        let list = document.getElementById("simulationList");
+        let simulations = x.getElementsByTagName("Simulation");
+        for (let i = 0; i < simulations.length; i++) {
+          let li = document.createElement("li");
+          let simulationName = simulations[i].getAttribute("Name");
+          li.textContent = `${simulationName}`;
+          list.appendChild(li);
+        }
+      }
+    </script>
+  </body>
+</html>

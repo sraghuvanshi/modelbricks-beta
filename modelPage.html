@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ModelBricks</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="mainNavbar">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggler" data-toggle="open-navbar1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a href="#">
+              <h4>Model<span>Bricks</span></h4>
+            </a>
+          </div>
+
+          <div class="navbar-menu" id="open-navbar1">
+            <ul class="navbar-nav">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./motivation.html">Motivation</a></li>
+
+              <li class="active">
+                <a href="./curatedList.html">Curated List</a>
+              </li>
+              <li><a href="./egfr.html">EGFR</a></li>
+
+              <li class="navbar-dropdown">
+                <a
+                  href="#"
+                  class="dropdown-toggler"
+                  data-dropdown="my-dropdown-id"
+                >
+                  Tools <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="my-dropdown-id">
+                  <li><a href="#">Actions</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">Seprated link</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">One more seprated link.</a></li>
+                </ul>
+              </li>
+              <li class="navbar-dropdown">
+                <a href="#" class="dropdown-toggler" data-dropdown="blog">
+                  Blog <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown" id="blog">
+                  <li><a href="#">Some category</a></li>
+                  <li><a href="#">Some another category</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">Seprated link</a></li>
+                  <li class="separator"></li>
+                  <li><a href="#">One more seprated link.</a></li>
+                </ul>
+              </li>
+              <li><a href="./about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Home  -->
+    <!-- section 1 -->
+    <!-- <div class="section1">
+      <h2>Model Page</h2>
+    </div> -->
+
+    <div class="admin-panel clearfix">
+      <div class="slidebar">
+        <div class="logo">
+          <a href=""></a>
+        </div>
+        <ul>
+          <li><a href="#dashboard" id="targeted">Reaction Diagram</a></li>
+          <li><a href="#media">Structures</a></li>
+          <li><a href="#posts">Reactions</a></li>
+          <li><a href="#pages">Species</a></li>
+          <li><a href="#links">Molecules</a></li>
+          <li><a href="#comments">Observables</a></li>
+          <li><a href="#widgets">Applications</a></li>
+          <li><a href="#plugins">3D pde</a></li>
+          <li><a href="#users">Functions</a></li>
+          <li><a href="#tools">Parameters</a></li>
+          <li><a href="#settings">Pathway</a></li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <ul class="topbar clearfix">
+          <li><a id="modelName" href="#"></a></li>
+          <li><a href="./printPage.html">p</a></li>
+          <li><a href="#">o</a></li>
+          <li><a href="#">f</a></li>
+          <li><a href="#">n</a></li>
+        </ul>
+        <div class="mainContent clearfix">
+          <div id="dashboard" class="optionData">
+            <h2 class="header"><span class="icon"></span>Reaction Diagram</h2>
+            <div class="reactionDiagram" id="diagram">
+              <img
+                src="https://vcellapi-beta.cam.uchc.edu:8080/biomodel/172076998/diagram"
+                alt="reactionDiagram"
+              />
+            </div>
+            <div class="monitor table">
+              <h4>Publications</h4>
+            </div>
+            <div class="monitor table">
+              <h4>Annotation</h4>
+              <p id="annotation"></p>
+            </div>
+          </div>
+          <div id="media" class="optionData">
+            <h2 class="header">Structures</h2>
+            <div class="monitor table large">
+              <h4>Membranes</h4>
+              <div class="clearfix">
+                <ul class="content">
+                  <li>content</li>
+                  <li class="posts">
+                    <span class="count">179</span><a href="">posts</a>
+                  </li>
+                  <li class="pages">
+                    <span class="count">13</span><a href="">pages</a>
+                  </li>
+                  <li class="categories">
+                    <span class="count">21</span><a href="">categories</a>
+                  </li>
+                  <li class="tags">
+                    <span class="count">305</span><a href="">tags</a>
+                  </li>
+                </ul>
+                <ul class="discussions">
+                  <li>discussions</li>
+                  <li class="comments">
+                    <span class="count">353</span><a href="">comments</a>
+                  </li>
+                  <li class="approved">
+                    <span class="count">319</span><a href="">approved</a>
+                  </li>
+                  <li class="pending">
+                    <span class="count">0</span><a href="">pending</a>
+                  </li>
+                  <li class="spam">
+                    <span class="count">34</span><a href="">spam</a>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                Theme <a href="">VCell</a> with
+                <a href="">3 widgets</a>
+              </p>
+            </div>
+          </div>
+          <div id="posts" class="optionData">
+            <h2 class="header">Reactions</h2>
+            <div class="monitor table large">
+              <!-- <h4>Species</h4> -->
+              <div class="clearfix">
+                <ul class="content">
+                  <li>Reaction</li>
+                  <li class="posts">
+                    <span class="count">179</span><a href="">posts</a>
+                  </li>
+                  <li class="pages">
+                    <span class="count">13</span><a href="">pages</a>
+                  </li>
+                  <li class="categories">
+                    <span class="count">21</span><a href="">categories</a>
+                  </li>
+                  <li class="tags">
+                    <span class="count">305</span><a href="">tags</a>
+                  </li>
+                </ul>
+                <ul class="content" id="reactionName">
+                  <li>Name</li>
+                </ul>
+                <ul class="content">
+                  <li>Structure</li>
+                  <li class="posts">
+                    <span class="count">179</span><a href="">posts</a>
+                  </li>
+                  <li class="pages">
+                    <span class="count">13</span><a href="">pages</a>
+                  </li>
+                  <li class="categories">
+                    <span class="count">21</span><a href="">categories</a>
+                  </li>
+                  <li class="tags">
+                    <span class="count">305</span><a href="">tags</a>
+                  </li>
+                </ul>
+                <ul class="discussions">
+                  <li>Kinetics</li>
+                  <li class="comments">
+                    <span class="count">353</span><a href="">comments</a>
+                  </li>
+                  <li class="approved">
+                    <span class="count">319</span><a href="">approved</a>
+                  </li>
+                  <li class="pending">
+                    <span class="count">0</span><a href="">pending</a>
+                  </li>
+                  <li class="spam">
+                    <span class="count">34</span><a href="">spam</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div id="pages" class="optionData">
+            <h2 class="header">Species</h2>
+            <div class="monitor table">
+              <h4>Species</h4>
+              <div class="clearfix">
+                <ul class="content">
+                  <li>content</li>
+                  <li class="posts">
+                    <span class="count">179</span><a href="">posts</a>
+                  </li>
+                  <li class="pages">
+                    <span class="count">13</span><a href="">pages</a>
+                  </li>
+                  <li class="categories">
+                    <span class="count">21</span><a href="">categories</a>
+                  </li>
+                  <li class="tags">
+                    <span class="count">305</span><a href="">tags</a>
+                  </li>
+                </ul>
+                <ul class="discussions">
+                  <li>discussions</li>
+                  <li class="comments">
+                    <span class="count">353</span><a href="">comments</a>
+                  </li>
+                  <li class="approved">
+                    <span class="count">319</span><a href="">approved</a>
+                  </li>
+                  <li class="pending">
+                    <span class="count">0</span><a href="">pending</a>
+                  </li>
+                  <li class="spam">
+                    <span class="count">34</span><a href="">spam</a>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                Theme <a href="">VCell</a> with
+                <a href="">3 widgets</a>
+              </p>
+            </div>
+          </div>
+          <div id="links" class="optionData">
+            <h2 class="header">Molecules</h2>
+            <div class="monitor table">
+              <h4>Species</h4>
+              <div class="clearfix">
+                <ul class="content">
+                  <li>content</li>
+                  <li class="posts">
+                    <span class="count">179</span><a href="">posts</a>
+                  </li>
+                  <li class="pages">
+                    <span class="count">13</span><a href="">pages</a>
+                  </li>
+                  <li class="categories">
+                    <span class="count">21</span><a href="">categories</a>
+                  </li>
+                  <li class="tags">
+                    <span class="count">305</span><a href="">tags</a>
+                  </li>
+                </ul>
+                <ul class="discussions">
+                  <li>discussions</li>
+                  <li class="comments">
+                    <span class="count">353</span><a href="">comments</a>
+                  </li>
+                  <li class="approved">
+                    <span class="count">319</span><a href="">approved</a>
+                  </li>
+                  <li class="pending">
+                    <span class="count">0</span><a href="">pending</a>
+                  </li>
+                  <li class="spam">
+                    <span class="count">34</span><a href="">spam</a>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                Theme <a href="">VCell</a> with
+                <a href="">3 widgets</a>
+              </p>
+            </div>
+            <div class="monitor table">
+              <h4>Species</h4>
+              <div class="clearfix">
+                <ul class="content">
+                  <li>content</li>
+                  <li class="posts">
+                    <span class="count">179</span><a href="">posts</a>
+                  </li>
+                  <li class="pages">
+                    <span class="count">13</span><a href="">pages</a>
+                  </li>
+                  <li class="categories">
+                    <span class="count">21</span><a href="">categories</a>
+                  </li>
+                  <li class="tags">
+                    <span class="count">305</span><a href="">tags</a>
+                  </li>
+                </ul>
+                <ul class="discussions">
+                  <li>discussions</li>
+                  <li class="comments">
+                    <span class="count">353</span><a href="">comments</a>
+                  </li>
+                  <li class="approved">
+                    <span class="count">319</span><a href="">approved</a>
+                  </li>
+                  <li class="pending">
+                    <span class="count">0</span><a href="">pending</a>
+                  </li>
+                  <li class="spam">
+                    <span class="count">34</span><a href="">spam</a>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                Theme <a href="">VCell</a> with
+                <a href="">3 widgets</a>
+              </p>
+            </div>
+            <div class="monitor table">
+              <h4>Species</h4>
+              <div class="clearfix">
+                <ul class="content">
+                  <li>content</li>
+                  <li class="posts">
+                    <span class="count">179</span><a href="">posts</a>
+                  </li>
+                  <li class="pages">
+                    <span class="count">13</span><a href="">pages</a>
+                  </li>
+                  <li class="categories">
+                    <span class="count">21</span><a href="">categories</a>
+                  </li>
+                  <li class="tags">
+                    <span class="count">305</span><a href="">tags</a>
+                  </li>
+                </ul>
+                <ul class="discussions">
+                  <li>discussions</li>
+                  <li class="comments">
+                    <span class="count">353</span><a href="">comments</a>
+                  </li>
+                  <li class="approved">
+                    <span class="count">319</span><a href="">approved</a>
+                  </li>
+                  <li class="pending">
+                    <span class="count">0</span><a href="">pending</a>
+                  </li>
+                  <li class="spam">
+                    <span class="count">34</span><a href="">spam</a>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                Theme <a href="">VCell</a> with
+                <a href="">3 widgets</a>
+              </p>
+            </div>
+            <div class="monitor table">
+              <h4>Species</h4>
+              <div class="clearfix">
+                <ul class="content">
+                  <li>content</li>
+                  <li class="posts">
+                    <span class="count">179</span><a href="">posts</a>
+                  </li>
+                  <li class="pages">
+                    <span class="count">13</span><a href="">pages</a>
+                  </li>
+                  <li class="categories">
+                    <span class="count">21</span><a href="">categories</a>
+                  </li>
+                  <li class="tags">
+                    <span class="count">305</span><a href="">tags</a>
+                  </li>
+                </ul>
+                <ul class="discussions">
+                  <li>discussions</li>
+                  <li class="comments">
+                    <span class="count">353</span><a href="">comments</a>
+                  </li>
+                  <li class="approved">
+                    <span class="count">319</span><a href="">approved</a>
+                  </li>
+                  <li class="pending">
+                    <span class="count">0</span><a href="">pending</a>
+                  </li>
+                  <li class="spam">
+                    <span class="count">34</span><a href="">spam</a>
+                  </li>
+                </ul>
+              </div>
+              <p>
+                Theme <a href="">VCell</a> with
+                <a href="">3 widgets</a>
+              </p>
+            </div>
+          </div>
+          <div id="comments" class="optionData">
+            <h2 class="header">Observables</h2>
+          </div>
+          <div id="widgets" class="optionData">
+            <h2 class="header">Applications</h2>
+          </div>
+          <div id="plugins" class="optionData">
+            <h2 class="header">3D pde</h2>
+          </div>
+          <div id="users" class="optionData">
+            <h2 class="header">Functions</h2>
+          </div>
+          <div id="tools" class="optionData">
+            <h2 class="header">Parameters</h2>
+          </div>
+          <div id="settings" class="optionData">
+            <h2 class="header">Pathway</h2>
+          </div>
+        </div>
+        <ul class="statusbar">
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li class="profiles-setting"><a href="">s</a></li>
+          <li class="logout"><a href="">k</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <header>
+      <h1>Reading Data from Biomodel XML Files</h1>
+    </header>
+    <main>
+      <ul id="compoundList"></ul>
+      <ul id="simulationList"></ul>
+      <pre id="output"></pre>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        let url = "./biomodels/Biomodel_172076998.xml";
+        fetch(url)
+          .then((Response) => Response.text())
+          .then((data) => {
+            let parser = new DOMParser();
+            let xml = parser.parseFromString(data, "application/xml");
+            document.getElementById("output").textContent = data;
+            console.log(xml);
+            getModelName(xml);
+            getAnnotation(xml);
+            getReactionName(xml);
+            buildCompoundList(xml);
+            buildSimulationList(xml);
+          });
+      });
+      function getModelName(x) {
+        let el = document.getElementById("modelName");
+        let tag = x.getElementsByTagName("BioModel");
+        let content = tag[0].getAttribute("Name");
+        console.log(content);
+        el.textContent = `${content}`;
+      }
+      function getAnnotation(x) {
+        let el = document.getElementById("annotation");
+        let tag = x.getElementsByTagName("Annotation");
+        let content = tag[0].textContent;
+        console.log(content);
+        el.textContent = `${content}`;
+      }
+      function getReactionName(x) {
+        let el = document.getElementById("reactionName");
+        let tag = x.getElementsByTagName("SimpleReaction");
+        for (let i = 0; i < tag.length; i++) {
+          let li = document.createElement("li");
+          let content = tag[i].getAttribute("Name");
+          li.textContent = `${content}`;
+          // li.classList.add("count");
+          el.appendChild(li);
+        }
+      }
+      function buildCompoundList(x) {
+        let list = document.getElementById("compoundList");
+        let compounds = x.getElementsByTagName("Compound");
+        console.log(compounds);
+        for (let i = 0; i < compounds.length; i++) {
+          let li = document.createElement("li");
+          let compoundName = compounds[i].getAttribute("Name");
+          li.textContent = `${compoundName}`;
+          list.appendChild(li);
+        }
+      }
+      function buildSimulationList(x) {
+        let list = document.getElementById("simulationList");
+        let simulations = x.getElementsByTagName("Simulation");
+        for (let i = 0; i < simulations.length; i++) {
+          let li = document.createElement("li");
+          let simulationName = simulations[i].getAttribute("Name");
+          li.textContent = `${simulationName}`;
+          list.appendChild(li);
+        }
+      }
+    </script>
+
+    <script src="./js/navbar.js"></script>
+  </body>
+</html>
