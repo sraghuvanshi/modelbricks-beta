@@ -86,13 +86,13 @@
         </div>
         <ul>
           <li><a href="#dashboard" id="targeted">Reaction Diagram</a></li>
-          <li><a href="#media">Structures</a></li>
           <li><a href="#posts">Reactions</a></li>
-          <li><a href="#pages">Species</a></li>
-          <li><a href="#links">Molecules</a></li>
-          <li><a href="#comments">Observables</a></li>
-          <li><a href="#widgets">Applications</a></li>
-          <li><a href="#plugins">3D pde</a></li>
+          <li><a href="#media">Structures</a></li>
+          <li><a href="#pages">Species & Molecules</a></li>
+          <li><a href="#links">AG Specifications</a></li>
+          <li><a href="#comments">SG Specifications</a></li>
+          <li><a href="#widgets">AG Simulations</a></li>
+          <li><a href="#plugins">SG Simulations</a></li>
           <li><a href="#users">Functions</a></li>
           <li><a href="#tools">Parameters</a></li>
           <li><a href="#settings">Pathway</a></li>
@@ -108,329 +108,122 @@
           <li><a href="#">n</a></li>
         </ul>
         <div class="mainContent clearfix">
-          <div id="dashboard" class="optionData">
-            <h2 class="header"><span class="icon"></span>Reaction Diagram</h2>
-            <div class="reactionDiagram" id="diagram">
-              <img
-                src="https://vcellapi-beta.cam.uchc.edu:8080/biomodel/172076998/diagram"
-                alt="reactionDiagram"
-              />
-            </div>
-            <div class="monitor table">
-              <h4>Publications</h4>
-            </div>
-            <div class="monitor table">
-              <h4>Annotation</h4>
-              <p id="annotation"></p>
-            </div>
-          </div>
           <div id="media" class="optionData">
             <h2 class="header">Structures</h2>
             <div class="monitor table large">
-              <h4>Membranes</h4>
               <div class="clearfix">
-                <ul class="content">
-                  <li>content</li>
-                  <li class="posts">
-                    <span class="count">179</span><a href="">posts</a>
-                  </li>
-                  <li class="pages">
-                    <span class="count">13</span><a href="">pages</a>
-                  </li>
-                  <li class="categories">
-                    <span class="count">21</span><a href="">categories</a>
-                  </li>
-                  <li class="tags">
-                    <span class="count">305</span><a href="">tags</a>
-                  </li>
+                <ul class="content" id="structureName">
+                  <li>Name</li>
                 </ul>
-                <ul class="discussions">
-                  <li>discussions</li>
-                  <li class="comments">
-                    <span class="count">353</span><a href="">comments</a>
-                  </li>
-                  <li class="approved">
-                    <span class="count">319</span><a href="">approved</a>
-                  </li>
-                  <li class="pending">
-                    <span class="count">0</span><a href="">pending</a>
-                  </li>
-                  <li class="spam">
-                    <span class="count">34</span><a href="">spam</a>
-                  </li>
+                <ul class="discussions" id="structureType">
+                  <li>Type</li>
+                </ul>
+                <ul class="discussions" id="structurePolarity">
+                  <li>Electrical (Membrane Polarity)</li>
                 </ul>
               </div>
-              <p>
-                Theme <a href="">VCell</a> with
-                <a href="">3 widgets</a>
-              </p>
             </div>
           </div>
           <div id="posts" class="optionData">
             <h2 class="header">Reactions</h2>
             <div class="monitor table large">
-              <!-- <h4>Species</h4> -->
               <div class="clearfix">
-                <ul class="content">
+                <ul class="content" id="reactionReaction">
                   <li>Reaction</li>
-                  <li class="posts">
-                    <span class="count">179</span><a href="">posts</a>
-                  </li>
-                  <li class="pages">
-                    <span class="count">13</span><a href="">pages</a>
-                  </li>
-                  <li class="categories">
-                    <span class="count">21</span><a href="">categories</a>
-                  </li>
-                  <li class="tags">
-                    <span class="count">305</span><a href="">tags</a>
-                  </li>
                 </ul>
                 <ul class="content" id="reactionName">
                   <li>Name</li>
                 </ul>
-                <ul class="content">
+                <ul class="content" id="reactionStructure">
                   <li>Structure</li>
-                  <li class="posts">
-                    <span class="count">179</span><a href="">posts</a>
-                  </li>
-                  <li class="pages">
-                    <span class="count">13</span><a href="">pages</a>
-                  </li>
-                  <li class="categories">
-                    <span class="count">21</span><a href="">categories</a>
-                  </li>
-                  <li class="tags">
-                    <span class="count">305</span><a href="">tags</a>
-                  </li>
                 </ul>
-                <ul class="discussions">
+                <ul class="discussions" id="reactionKinetics">
                   <li>Kinetics</li>
-                  <li class="comments">
-                    <span class="count">353</span><a href="">comments</a>
-                  </li>
-                  <li class="approved">
-                    <span class="count">319</span><a href="">approved</a>
-                  </li>
-                  <li class="pending">
-                    <span class="count">0</span><a href="">pending</a>
-                  </li>
-                  <li class="spam">
-                    <span class="count">34</span><a href="">spam</a>
-                  </li>
                 </ul>
               </div>
             </div>
           </div>
           <div id="pages" class="optionData">
-            <h2 class="header">Species</h2>
-            <div class="monitor table">
+            <h2 class="header">Species & Molecules</h2>
+            <div class="monitor table long">
               <h4>Species</h4>
               <div class="clearfix">
-                <ul class="content">
-                  <li>content</li>
-                  <li class="posts">
-                    <span class="count">179</span><a href="">posts</a>
-                  </li>
-                  <li class="pages">
-                    <span class="count">13</span><a href="">pages</a>
-                  </li>
-                  <li class="categories">
-                    <span class="count">21</span><a href="">categories</a>
-                  </li>
-                  <li class="tags">
-                    <span class="count">305</span><a href="">tags</a>
-                  </li>
+                <ul class="content" id="speciesName">
+                  <li>Name</li>
                 </ul>
-                <ul class="discussions">
-                  <li>discussions</li>
-                  <li class="comments">
-                    <span class="count">353</span><a href="">comments</a>
-                  </li>
-                  <li class="approved">
-                    <span class="count">319</span><a href="">approved</a>
-                  </li>
-                  <li class="pending">
-                    <span class="count">0</span><a href="">pending</a>
-                  </li>
-                  <li class="spam">
-                    <span class="count">34</span><a href="">spam</a>
-                  </li>
+                <ul class="content" id="speciesStructure">
+                  <li>Structure</li>
                 </ul>
               </div>
-              <p>
-                Theme <a href="">VCell</a> with
-                <a href="">3 widgets</a>
-              </p>
+            </div>
+            <div class="monitor table long">
+              <h4>Molecules</h4>
+              <div class="clearfix">
+                <ul class="content">
+                  <li>Name</li>
+                </ul>
+                <ul class="content">
+                  <li>Link</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div id="links" class="optionData">
-            <h2 class="header">Molecules</h2>
-            <div class="monitor table">
-              <h4>Species</h4>
+            <h2 class="header">Specifications - Asymmetric Geometry</h2>
+            <div class="monitor table large">
               <div class="clearfix">
-                <ul class="content">
-                  <li>content</li>
-                  <li class="posts">
-                    <span class="count">179</span><a href="">posts</a>
-                  </li>
-                  <li class="pages">
-                    <span class="count">13</span><a href="">pages</a>
-                  </li>
-                  <li class="categories">
-                    <span class="count">21</span><a href="">categories</a>
-                  </li>
-                  <li class="tags">
-                    <span class="count">305</span><a href="">tags</a>
-                  </li>
+                <ul class="content" id="specificationsSpecies">
+                  <li>Species</li>
                 </ul>
-                <ul class="discussions">
-                  <li>discussions</li>
-                  <li class="comments">
-                    <span class="count">353</span><a href="">comments</a>
-                  </li>
-                  <li class="approved">
-                    <span class="count">319</span><a href="">approved</a>
-                  </li>
-                  <li class="pending">
-                    <span class="count">0</span><a href="">pending</a>
-                  </li>
-                  <li class="spam">
-                    <span class="count">34</span><a href="">spam</a>
-                  </li>
+                <ul class="content" id="specificationsStructure">
+                  <li>Structure</li>
+                </ul>
+                <ul class="content" id="specificationsInitial">
+                  <li>Initial Condition</li>
+                </ul>
+                <ul class="discussions" id="specificationsDiffusion">
+                  <li>Diffusion Constant</li>
                 </ul>
               </div>
-              <p>
-                Theme <a href="">VCell</a> with
-                <a href="">3 widgets</a>
-              </p>
-            </div>
-            <div class="monitor table">
-              <h4>Species</h4>
-              <div class="clearfix">
-                <ul class="content">
-                  <li>content</li>
-                  <li class="posts">
-                    <span class="count">179</span><a href="">posts</a>
-                  </li>
-                  <li class="pages">
-                    <span class="count">13</span><a href="">pages</a>
-                  </li>
-                  <li class="categories">
-                    <span class="count">21</span><a href="">categories</a>
-                  </li>
-                  <li class="tags">
-                    <span class="count">305</span><a href="">tags</a>
-                  </li>
-                </ul>
-                <ul class="discussions">
-                  <li>discussions</li>
-                  <li class="comments">
-                    <span class="count">353</span><a href="">comments</a>
-                  </li>
-                  <li class="approved">
-                    <span class="count">319</span><a href="">approved</a>
-                  </li>
-                  <li class="pending">
-                    <span class="count">0</span><a href="">pending</a>
-                  </li>
-                  <li class="spam">
-                    <span class="count">34</span><a href="">spam</a>
-                  </li>
-                </ul>
-              </div>
-              <p>
-                Theme <a href="">VCell</a> with
-                <a href="">3 widgets</a>
-              </p>
-            </div>
-            <div class="monitor table">
-              <h4>Species</h4>
-              <div class="clearfix">
-                <ul class="content">
-                  <li>content</li>
-                  <li class="posts">
-                    <span class="count">179</span><a href="">posts</a>
-                  </li>
-                  <li class="pages">
-                    <span class="count">13</span><a href="">pages</a>
-                  </li>
-                  <li class="categories">
-                    <span class="count">21</span><a href="">categories</a>
-                  </li>
-                  <li class="tags">
-                    <span class="count">305</span><a href="">tags</a>
-                  </li>
-                </ul>
-                <ul class="discussions">
-                  <li>discussions</li>
-                  <li class="comments">
-                    <span class="count">353</span><a href="">comments</a>
-                  </li>
-                  <li class="approved">
-                    <span class="count">319</span><a href="">approved</a>
-                  </li>
-                  <li class="pending">
-                    <span class="count">0</span><a href="">pending</a>
-                  </li>
-                  <li class="spam">
-                    <span class="count">34</span><a href="">spam</a>
-                  </li>
-                </ul>
-              </div>
-              <p>
-                Theme <a href="">VCell</a> with
-                <a href="">3 widgets</a>
-              </p>
-            </div>
-            <div class="monitor table">
-              <h4>Species</h4>
-              <div class="clearfix">
-                <ul class="content">
-                  <li>content</li>
-                  <li class="posts">
-                    <span class="count">179</span><a href="">posts</a>
-                  </li>
-                  <li class="pages">
-                    <span class="count">13</span><a href="">pages</a>
-                  </li>
-                  <li class="categories">
-                    <span class="count">21</span><a href="">categories</a>
-                  </li>
-                  <li class="tags">
-                    <span class="count">305</span><a href="">tags</a>
-                  </li>
-                </ul>
-                <ul class="discussions">
-                  <li>discussions</li>
-                  <li class="comments">
-                    <span class="count">353</span><a href="">comments</a>
-                  </li>
-                  <li class="approved">
-                    <span class="count">319</span><a href="">approved</a>
-                  </li>
-                  <li class="pending">
-                    <span class="count">0</span><a href="">pending</a>
-                  </li>
-                  <li class="spam">
-                    <span class="count">34</span><a href="">spam</a>
-                  </li>
-                </ul>
-              </div>
-              <p>
-                Theme <a href="">VCell</a> with
-                <a href="">3 widgets</a>
-              </p>
             </div>
           </div>
           <div id="comments" class="optionData">
-            <h2 class="header">Observables</h2>
+            <h2 class="header">Specifications - Symmetric Geometry</h2>
+            <div class="monitor table large">
+              <div class="clearfix">
+                <ul class="content" id="specificationsSpecies">
+                  <li>Species</li>
+                </ul>
+                <ul class="content" id="specificationsStructure">
+                  <li>Structure</li>
+                </ul>
+                <ul class="content" id="specificationsInitial">
+                  <li>Initial Condition</li>
+                </ul>
+                <ul class="discussions" id="specificationsDiffusion">
+                  <li>Diffusion Constant</li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div id="widgets" class="optionData">
-            <h2 class="header">Applications</h2>
+            <h2 class="header">Simulations - Asymmetric Geometry</h2>
+            <div class="monitor table large">
+              <div class="clearfix">
+                <ul class="content" id="simulationsName">
+                  <li>Name</li>
+                </ul>
+                <ul class="content" id="specificationsStructure">
+                  <li>End Time</li>
+                </ul>
+                <ul class="content" id="specificationsInitial">
+                  <li>Output Options</li>
+                </ul>
+              </div>
+            </div>
           </div>
           <div id="plugins" class="optionData">
-            <h2 class="header">3D pde</h2>
+            <h2 class="header">Simulations - Symmetric Geometry</h2>
           </div>
           <div id="users" class="optionData">
             <h2 class="header">Functions</h2>
@@ -440,6 +233,24 @@
           </div>
           <div id="settings" class="optionData">
             <h2 class="header">Pathway</h2>
+          </div>
+          <div id="dashboard" class="optionData">
+            <h2 class="header"><span class="icon"></span>Reaction Diagram</h2>
+            <div class="reactionDiagram" id="diagram">
+              <img
+                class="image-zoom-available"
+                src="https://vcellapi-beta.cam.uchc.edu:8080/biomodel/172076998/diagram"
+                alt="reactionDiagram"
+                draggable="false"
+              />
+            </div>
+            <div class="monitor table small">
+              <h4>Publications</h4>
+            </div>
+            <div class="monitor table small">
+              <h4>Annotation</h4>
+              <p id="annotation"></p>
+            </div>
           </div>
         </div>
         <ul class="statusbar">
@@ -451,14 +262,23 @@
       </div>
     </div>
 
-    <header>
-      <h1>Reading Data from Biomodel XML Files</h1>
-    </header>
-    <main>
-      <ul id="compoundList"></ul>
-      <ul id="simulationList"></ul>
-      <pre id="output"></pre>
-    </main>
+    <div class="wrapper">
+      <img
+        class="image-zoom-available"
+        src="http://img01.thedrum.com/s3fs-public/drum_basic_article/97639/main_images/WheresWallyAtWembley_6.jpg"
+        draggable="false"
+      />
+      <img
+        class="image-zoom-available"
+        src="https://s-media-cache-ak0.pinimg.com/originals/0b/1f/03/0b1f03eacd8b96dd32d476680d200ac2.jpg"
+        draggable="false"
+      />
+      <img
+        class="image-zoom-available"
+        src="http://4.bp.blogspot.com/-NjohvYgHUQU/Ttcs_ommPRI/AAAAAAAABA0/wm6M6HxbI28/s1600/Play+Wheres+Waldo+Online+Puzzle+Game+Department+Store+Shopping+Mall.jpg"
+        draggable="false"
+      />
+    </div>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         let url = "./biomodels/Biomodel_172076998.xml";
@@ -467,63 +287,178 @@
           .then((data) => {
             let parser = new DOMParser();
             let xml = parser.parseFromString(data, "application/xml");
-            document.getElementById("output").textContent = data;
+            // document.getElementById("output").textContent = data;
             console.log(xml);
             getModelName(xml);
             getAnnotation(xml);
-            getReactionName(xml);
-            buildCompoundList(xml);
-            buildSimulationList(xml);
+            getStructureTable(xml);
+            getSpeciesTable(xml);
+            getSpecificationsTable(xml);
+            getSimulationsTable(xml);
+            getReactionTable(xml);
           });
       });
       function getModelName(x) {
         let el = document.getElementById("modelName");
         let tag = x.getElementsByTagName("BioModel");
         let content = tag[0].getAttribute("Name");
-        console.log(content);
+
         el.textContent = `${content}`;
       }
       function getAnnotation(x) {
         let el = document.getElementById("annotation");
         let tag = x.getElementsByTagName("Annotation");
         let content = tag[0].textContent;
-        console.log(content);
         el.textContent = `${content}`;
       }
-      function getReactionName(x) {
-        let el = document.getElementById("reactionName");
+      function getReactionTable(x) {
+        let reaction = document.getElementById("reactionReaction");
+        let name = document.getElementById("reactionName");
+        let structure = document.getElementById("reactionStructure");
+        let kinetics = document.getElementById("reactionKinetics");
+
         let tag = x.getElementsByTagName("SimpleReaction");
+        let tagKinetics = x.getElementsByTagName("Kinetics");
+        let tagReactant = x.getElementsByTagName("Reactant");
+        let tagProduct = x.getElementsByTagName("Product");
+
         for (let i = 0; i < tag.length; i++) {
           let li = document.createElement("li");
           let content = tag[i].getAttribute("Name");
           li.textContent = `${content}`;
           // li.classList.add("count");
-          el.appendChild(li);
+          name.appendChild(li);
+        }
+        for (let i = 0; i < tag.length; i++) {
+          let li = document.createElement("li");
+          let content = tag[i].getAttribute("Structure");
+          li.textContent = `${content}`;
+          // li.classList.add("count");
+          structure.appendChild(li);
+        }
+        for (let i = 0; i < tag.length; i++) {
+          let li = document.createElement("li");
+          let content = tagKinetics[i].getAttribute("KineticsType");
+          li.textContent = `${content}`;
+          // li.classList.add("count");
+          kinetics.appendChild(li);
+        }
+        for (let i = 0; i < tag.length; i++) {
+          let li = document.createElement("li");
+          let reactantContent = tagReactant[i].getAttribute(
+            "LocalizedCompoundRef"
+          );
+          let productContent = tagProduct[i].getAttribute(
+            "LocalizedCompoundRef"
+          );
+          li.textContent = `${reactantContent} -> ${productContent}`;
+          // li.classList.add("count");
+          reaction.appendChild(li);
         }
       }
-      function buildCompoundList(x) {
-        let list = document.getElementById("compoundList");
-        let compounds = x.getElementsByTagName("Compound");
-        console.log(compounds);
-        for (let i = 0; i < compounds.length; i++) {
+      function getStructureTable(x) {
+        let name = document.getElementById("structureName");
+        let type = document.getElementById("structureType");
+        let polarity = document.getElementById("structurePolarity");
+
+        let membrane = x.getElementsByTagName("Membrane");
+        let feature = x.getElementsByTagName("Feature");
+
+        for (let i = 0; i < membrane.length; i++) {
+          let liName = document.createElement("li");
+          let liType = document.createElement("li");
+          let content = membrane[i].getAttribute("Name");
+          liName.textContent = `${content}`;
+          liType.textContent = "Membrane";
+          // li.classList.add("count");
+          name.appendChild(liName);
+          type.appendChild(liType);
+        }
+        for (let i = 0; i < feature.length; i++) {
+          let liName = document.createElement("li");
+          let liType = document.createElement("li");
+          let content = feature[i].getAttribute("Name");
+          liName.textContent = `${content}`;
+          liType.textContent = "Compartment";
+          // li.classList.add("count");
+          name.appendChild(liName);
+          type.appendChild(liType);
+        }
+        for (let i = 0; i < membrane.length; i++) {
           let li = document.createElement("li");
-          let compoundName = compounds[i].getAttribute("Name");
-          li.textContent = `${compoundName}`;
-          list.appendChild(li);
+          let positive = membrane[i].getAttribute("PositiveFeature");
+          let negative = membrane[i].getAttribute("NegativeFeature");
+          li.textContent = `${positive}(+) ${negative}(-)`;
+          // li.classList.add("count");
+          polarity.appendChild(li);
         }
       }
-      function buildSimulationList(x) {
-        let list = document.getElementById("simulationList");
-        let simulations = x.getElementsByTagName("Simulation");
-        for (let i = 0; i < simulations.length; i++) {
-          let li = document.createElement("li");
-          let simulationName = simulations[i].getAttribute("Name");
-          li.textContent = `${simulationName}`;
-          list.appendChild(li);
+      function getSpeciesTable(x) {
+        let name = document.getElementById("speciesName");
+        let structure = document.getElementById("speciesStructure");
+
+        let tag = x.getElementsByTagName("LocalizedCompound");
+
+        for (let i = 0; i < tag.length; i++) {
+          let liName = document.createElement("li");
+          let liStructure = document.createElement("li");
+          let nameContent = tag[i].getAttribute("Name");
+          let structureContent = tag[i].getAttribute("Structure");
+          liName.textContent = `${nameContent}`;
+          liStructure.textContent = `${structureContent}`;
+          // li.classList.add("count");
+          name.appendChild(liName);
+          structure.appendChild(liStructure);
+        }
+      }
+      function getSpecificationsTable(x) {
+        let species = document.getElementById("specificationsSpecies");
+        let structure = document.getElementById("specificationsStructure");
+        let initial = document.getElementById("specificationsInitial");
+        let diffusion = document.getElementById("specificationsDiffusion");
+
+        let tag = x.getElementsByTagName("LocalizedCompoundSpec");
+        let tagInitial = x.getElementsByTagName("InitialConcentration");
+        let tagDiffusion = x.getElementsByTagName("Diffusion");
+
+        for (let i = 0; i < tag.length / 2; i++) {
+          let liSpecies = document.createElement("li");
+          let speciesContent = tag[i].getAttribute("LocalizedCompoundRef");
+          liSpecies.textContent = `${speciesContent}`;
+          // li.classList.add("count");
+          species.appendChild(liSpecies);
+        }
+        for (let i = 0; i < tagInitial.length / 2; i++) {
+          let liInitial = document.createElement("li");
+          let initialContent = tagInitial[i].textContent;
+          liInitial.textContent = `${initialContent}`;
+          // li.classList.add("count");
+          initial.appendChild(liInitial);
+        }
+        for (let i = 0; i < tagDiffusion.length / 4; i++) {
+          let liDiffusion = document.createElement("li");
+          let diffusionContent = tagDiffusion[i].textContent;
+          liDiffusion.textContent = `${diffusionContent}`;
+          // li.classList.add("count");
+          diffusion.appendChild(liDiffusion);
+        }
+      }
+      function getSimulationsTable(x) {
+        let name = document.getElementById("simulationsName");
+
+        let tag = x.getElementsByTagName("Simulation");
+
+        for (let i = 54; i < tag.length; i++) {
+          let liName = document.createElement("li");
+          let nameContent = tag[i].getAttribute("Name");
+          liName.textContent = `${nameContent}`;
+          // li.classList.add("count");
+          name.appendChild(liName);
         }
       }
     </script>
 
     <script src="./js/navbar.js"></script>
+    <script src="./js/imageZoom.js"></script>
   </body>
 </html>

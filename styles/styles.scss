@@ -273,7 +273,7 @@ a {
   clear: both;
 }
 .admin-panel {
-  width: 990px;
+  width: 85%;
   margin: 50px auto;
 }
 /*slidebar */
@@ -365,7 +365,7 @@ a {
 
 .main {
   float: left;
-  width: 79%;
+  width: 80%;
   height: 690px;
   background-color: rgb(255, 255, 255);
   position: relative;
@@ -487,7 +487,7 @@ a {
   // border-radius: 5px;
   border-bottom: 1px solid black;
   min-width: 100%;
-  height: 40%;
+  height: 350px;
   display: inline-block;
   margin-bottom: 2%;
 
@@ -509,6 +509,15 @@ a {
 
 .optionData > .table.large {
   width: 98%;
+  padding: 5%;
+  height: 500px;
+}
+.optionData > .table.small {
+  // padding: 5%;
+  height: 150px;
+}
+.optionData > .table.long {
+  width: 49%;
   padding: 5%;
   height: 500px;
 }
@@ -740,3 +749,21 @@ a {
 }
 
 // single model page done
+// Custom Code
+* {
+  user-select: none;
+}
+.wrapper {
+  overflow: hidden;
+  padding: 10%;
+  img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.image-zoom-available {
+  cursor: zoom-in;
+}
+.image-zoom-available.is-active {
+  cursor: none;
+}

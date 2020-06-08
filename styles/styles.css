@@ -307,7 +307,7 @@ a {
 }
 
 .admin-panel {
-  width: 990px;
+  width: 85%;
   margin: 50px auto;
 }
 
@@ -415,7 +415,7 @@ a {
 /*main*/
 .main {
   float: left;
-  width: 79%;
+  width: 80%;
   height: 690px;
   background-color: white;
   position: relative;
@@ -555,7 +555,7 @@ a {
   float: left;
   border-bottom: 1px solid black;
   min-width: 100%;
-  height: 40%;
+  height: 350px;
   display: inline-block;
   margin-bottom: 2%;
 }
@@ -577,6 +577,16 @@ a {
 
 .optionData > .table.large {
   width: 98%;
+  padding: 5%;
+  height: 500px;
+}
+
+.optionData > .table.small {
+  height: 150px;
+}
+
+.optionData > .table.long {
+  width: 49%;
   padding: 5%;
   height: 500px;
 }
@@ -806,5 +816,31 @@ a {
   src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
+}
+
+* {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.wrapper {
+  overflow: hidden;
+  padding: 10%;
+}
+
+.wrapper img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.image-zoom-available {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.image-zoom-available.is-active {
+  cursor: none;
 }
 /*# sourceMappingURL=styles.css.map */
