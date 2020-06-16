@@ -1,7 +1,3 @@
-// Here comes the over-commented code. I hope it helps in understanding what is going on here and adapt it to suit your needs :) If it's fun, check out my other over-commented projects
-
-// To achieve this effect we're creating a copy of the image and scaling it up. Next we'll pull the x and y coordinates of the mouse on the original image. Then we translate the big image so that the points we are looking at match up. Finally we create a mask to display the piece of the image that we're interested in.
-
 // So let's dive into it...
 
 let settings = {

@@ -1,11 +1,3 @@
-// Updated: 23-4-2020
-// I've moved the old navbar `pen` to: https://codepen.io/themustafaomar/pen/YzyNQXV
-// Since it was old and coded badly this is a new one build with pure Javascript
-
-// Other important pens.
-// Map: https://codepen.io/themustafaomar/pen/ZEGJeZq
-// Dashboard: https://codepen.io/themustafaomar/pen/jLMPKm
-
 let dropdowns = document.querySelectorAll(".navbar .dropdown-toggler");
 let dropdownIsOpen = false;
 
